@@ -28,6 +28,8 @@ public class HitungFibonacci {
         String identitas =  "Dany Achmad Virgian / XR5 / 10";
         tampilJudul(identitas);
         int n = tampilInput();
+        BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
         }
         private static int tampilInput(){
             Scanner scanner = new Scanner(System.in);
@@ -45,8 +47,9 @@ public class HitungFibonacci {
             }
             return hasil[n-1];
         }
-        BigInteger hasil = fibo(n);
-        
+        private static void tampilHasil(int n, BigInteger hasil) {
+            System.out.println("bilangan fibonacci ke-"+ n + " : " + hasil);
+        }
         }
     
 
