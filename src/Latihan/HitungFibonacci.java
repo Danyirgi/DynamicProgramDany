@@ -5,6 +5,8 @@
  */
 package Latihan;
 
+import java.util.Scanner;
+
 /**
  *
  * @author DANYAV
@@ -24,10 +26,18 @@ public class HitungFibonacci {
         public static void main(String[] args) {
         String identitas =  "Dany Achmad Virgian / XR5 / 10";
         tampilJudul(identitas);
-        
+        int n = tampilInput();
+        }
+        private static int tampilInput(){
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("bilangan ke-: ");
+            int n = scanner.nextInt();
+            return n;
+                        
+        }
         
         }
-    }
+    
 
 
 
